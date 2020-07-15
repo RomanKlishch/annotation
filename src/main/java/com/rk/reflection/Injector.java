@@ -3,7 +3,6 @@ package com.rk.reflection;
 import com.rk.annotation.Inject;
 
 import java.lang.reflect.Field;
-import java.lang.reflect.Type;
 
 public class Injector {
 
@@ -17,12 +16,12 @@ public class Injector {
                 if (annotation.value().getTypeName().equals(Void.class.getTypeName())) {
                     declaredField.setAccessible(true);
                     objectFromAnnotation = Class.forName(declaredField.getGenericType().getTypeName()).getDeclaredConstructor().newInstance();
-                    declaredField.set(object,objectFromAnnotation);
+                    declaredField.set(object, objectFromAnnotation);
                     declaredField.setAccessible(false);
                 } else {
                     declaredField.setAccessible(true);
-                    objectFromAnnotation= annotation.value().getDeclaredConstructor().newInstance();
-                    declaredField.set(object,objectFromAnnotation);
+                    objectFromAnnotation = annotation.value().getDeclaredConstructor().newInstance();
+                    declaredField.set(object, objectFromAnnotation);
                     declaredField.setAccessible(false);
                 }
             }

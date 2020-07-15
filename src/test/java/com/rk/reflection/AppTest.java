@@ -42,11 +42,12 @@ public class AppTest {
     }
 
     @Run
-    public void setNumber(int number) {
+    public void setNumber() {
         this.number = 10;
     }
+
     @Run
-    public void setStringPrivate(String stringPrivate) {
+    public void setStringPrivate() {
         this.stringPrivate = "worked";
     }
 

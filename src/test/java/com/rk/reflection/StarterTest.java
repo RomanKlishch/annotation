@@ -15,8 +15,8 @@ class StarterTest {
         Starter starter = new Starter();
         starter.run(appTest);
 
-        assertEquals(10,appTest.getNumber());
-        assertEquals("worked",appTest.getStringPrivate());
+        assertEquals(10, appTest.getNumber());
+        assertEquals("worked", appTest.getStringPrivate());
         assertNull(appTest.getStringPublic());
 
     }
