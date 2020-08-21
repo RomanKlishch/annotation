@@ -6,7 +6,6 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 public class Starter {
-    //TODO: Как метод run работает с методами у которых есть аргументы?
     public <T> void run(T object) throws InvocationTargetException, IllegalAccessException {
         Class<?> clazz = object.getClass();
         Method[] methods = clazz.getDeclaredMethods();

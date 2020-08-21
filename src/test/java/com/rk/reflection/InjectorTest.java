@@ -14,7 +14,7 @@ class InjectorTest {
         AppTest appTest = new AppTest();
         injector.InjectFields(appTest);
 
-        assertEquals(0,appTest.getNumber());
+        assertEquals(0, appTest.getNumber());
         assertNull(appTest.getStringPrivate());
 
         assertNotNull(appTest.getStringPublic());

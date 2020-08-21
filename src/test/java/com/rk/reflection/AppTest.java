@@ -8,7 +8,7 @@ import java.util.List;
 
 
 public class AppTest {
-    //TODO: какая должна быть реакция @Inject если она над полем с преметивным типом?
+
     private int number;
     private String stringPrivate;
     @Inject
