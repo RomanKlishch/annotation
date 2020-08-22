@@ -19,12 +19,6 @@ public class AppTest {
     public AppTest() {
     }
 
-    public AppTest(int number, String stringPrivate, String stringPublic) {
-        this.number = number;
-        this.stringPrivate = stringPrivate;
-        this.stringPublic = stringPublic;
-    }
-
     public int getNumber() {
         return number;
     }
